@@ -4,11 +4,8 @@
 <meta charset="utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1" >
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <style>
 .center {
@@ -30,98 +27,120 @@
 <br>
 </div>
 
-<h2>Projects<h2>
+<h2>Projects</h2>
 
-<h3>Build the game Hex and an AI to play it</h3>
-In my first year at Durham, my end of year assessment for the Java module was to make the game <a href="https://en.wikipedia.org/wiki/Hex_(board_game)">Hex</a> in Java and build an AI to play against. The AI used a Monte Carlo tree search.<br>
-Technologies used: Java
-<br>
-<h3>Twitter Sentiment Analysis</h3>
-The assessment for my web programming submodule in second year was to build a website for searching an FAQ, as well as allowing certain users (verified using the University login system) to make changes to the FAQ. Additionally, the website allowed users search a topic, and, using sentiment analysis and the twitter API, display tweets saying positive, negative and neutral things about the topic.<br>
-Technologies used: HTML, CSS, Javascript, JQuery, Bootstrap, NodeJS, php, json
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/VHDLCoursework">VHDL</a></h3>
-Used Altera Quartus to design, using VHDl, a 32bit Ripple Adder and a 32 bit Carry-Lookahead Adder, Test their respective timings, and discuss the strengths of FPGAs vs ASICs.
-Technologies used: VHDL
-<br>
-<h3>Fake News Detection</h3>
-The assessment for the Big Data submodule in 3rd year was, given a document containing 6000 articles labeled fake or real news, to build a Neural Network that, after being trained on a training set of the articles, could determine which articles in the test set were fake news and which were real news.<br>
-Technologies used: Natural Language Processing, Python, Tensorflow, Keras
-<br>
-<h3>Optimising Sparse Matrix-Matrix Multiplication</h3>
-For my GPU, Many-Core, and Cluster Computing submodule, the assignment was to write code that efficiently Multiplys sparse matrices, using performance analysis tools to identify hotspots.
-<br>Technologies used: C, OpenACC, Intel VTune Amplifier
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/NetworksCoursework">Modelling Network Graphs</a></h3>
-The assignment for the Networks Analysis Submodule was to create models of different graph types, investigate distrubitions such as degree distribution and vertex brilliance, and compare the models to real data sets. I also produced search algorithms that perform efficiently for different types of graph.
-<br>Technologies used: Python, Matplotlib
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/VR-coursework">Determining VR headset Orientation from IMU data</a></h3>
-The assignment for the Virtual Reality Submodule was, given Accelerometer, Magnetometer and Gyroscope data over a 30 second time period, to deduce the orientation of the Inertial measurement unit, and create 2D graphs to show the orientation over time, as well as an animated 3D plot
-<br>Technologies used: Python
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/BlockchainCoursework">Cryptocurrencies and Blockchain</a></h3>
-Implemented simple proof-of-work and proof-of-stake mining puzzles in python, and investigated the differences between Bitcoin and a cryptocurrency of my choice (TRON)
-<br>Technologies used: Python, ECDSA
-<br>
-<h2>Masters Project</h2>
-My 4th year project title is "Dynamic Difficulty Adjustment with Limited Player Data". I have built a <a href="https://github.com/ElliotMoffatt/BulletHell">Bullet hell game</a> and implemented a Dynamic Difficulty System in order to maximise player engagement by preventing the game's difficulty from being too boring or too frustrating. The paper outlines a Framework for implementing such a system in any game.
-<br>Technologies used: Unity3D, C#
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/nymParser">NymParser</a></h3>
-Given a csv files full of synonym and antonym pairs, I used Python to parse the data into a number of tests to be used as practice for CEM style 11+ tests. I then outputted code that could be inserted into a LaTeX document. The book is <a href="https://www.amazon.co.uk/dp/1082205273/ref=sr_1_7?keywords=synonym+and+antonym&qid=1563985888&s=gateway&sr=8-7">Available on Amazon</a>
-<br>Technologies used: Python, LaTeX
-<br>
-<h3><a href="https://github.com/ElliotMoffatt/ShuffledSentences">Shuffled Sentences</a></h3>
-Successor to NymParser, for the Shuffled sentences part of the cem test.<br>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-for-myself-tab" data-bs-toggle="tab" data-bs-target="#nav-for-myself" type="button" role="tab" aria-controls="nav-for-myself" aria-selected="true">For myself</button>
+            <button class="nav-link" id="nav-for-others-tab" data-bs-toggle="tab" data-bs-target="#nav-for-others" type="button" role="tab" aria-controls="nav-for-others" aria-selected="false">For family</button>
+            <button class="nav-link" id="nav-for-university-tab" data-bs-toggle="tab" data-bs-target="#nav-for-university" type="button" role="tab" aria-controls="nav-for-university" aria-selected="false">For university</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-for-myself" role="tabpanel" aria-labelledby="nav-for-myself-tab">
 
-This time I actually created classes for tests and questions instead of using arrays of arrays of arrays.<br>
+            <h3><a href="https://elliotmoffatt.github.io/spending_analyser_vue/#/">Spending analyser</a></h3>
+            A small webapp to automatically analyse my spending habits, by parsing a .txt or .csv transactions file from your bank, and analysing the data grouped by month and (self-defined) categories
+            <a href="https://github.com/ElliotMoffatt/spending_analyser_vue">Repo</a>
+            <br>Technologies used: Vue.js, html, css, js, bootstrap
+            <br>
 
-Also had a fixed seed for the randomness so i could shuffle the same way each time, saving me from having to create an intermediate save file after shuffling.<br>
-
-The book is also <a href="https://www.amazon.co.uk/Shuffled-Sentences-Practice-Book-Preparation/dp/1089544685/ref=sr_1_1?keywords=shuffled+sentences+practice+book&qid=1565781395&s=gateway&sr=8-1">Available on Amazon</a>
-<br>Technologies used: Python, LaTeX
-<br>
-
-<h3>Raspberry Pi Weather Station</h3>
-Hosted at <a href="https://munkfishgames.com/">munkfishgames.com</a>, this project involved using a Raspberry Pi with sense hat to record temperature, humidity and pressure data and send it to a mySQL database.
-<br> Technologies used: Python, php, mySQL
-<br>
-	
-<h3>LAMP stack Login system</h3>
-Created a simple login system using php and MySQL. Hosted at <a href="https://munkfishgames.com">premium.munkfishgames.com</a>
-	<br> Technologies used: php, MySQL
-<br>
-	
-	<h3>Current Project: ASP.net familiarisation</h3>
-Currently I am picking up the basics of ASP.Net. I currently in the planning and experimentation phase of creating a web app to track my Overwatch gameplay performance. Repo link soon.
-	<br> Technologies Used: ASP.Net, .Net core, C#
-
-<br><br><br>
-
-<h2> Websites</h2>
-I have created several websites both using Wordpress and from the ground up; using HTML, CSS and Javascript, as well as Bootstrap, JQuery, php and nodeJS.
-<ul>
-<li><a href="https://fogbg.org.uk/">Site for my local Burial Ground</a></li>
-<li><a href="https://lympstone11plus.co.uk/">Site for local 11+ exam mocks</a></li>
-<li><a href="https://turmalinacalp.wordpress.com/">Site advertising an apartment in Spain</a></li>
-</ul>
-
-<br><br><br>
-
-<!--  HTML CODE GOES HERE -->
+            <h3><a href="https://github.com/ElliotMoffatt/ffxiv-blender-breast-slider">Blender addon</a></h3>
+            A small blender addon to help my partner test the clothing mods she makes for Final Fantasy XIV
+            <br>Technologies used: Python
+            <br>
 
 
-<script type="text/javascript">
-$.ajaxSetup ({
-    // Disable caching of AJAX responses (not really sure why I need this, but practical instructor advised including it)
-    cache: false,
-});
+        </div>
+        <div class="tab-pane fade" id="nav-for-others" role="tabpanel" aria-labelledby="nav-for-others-tab">
+
+            <h3><a href="https://github.com/ElliotMoffatt/nymParser">NymParser</a></h3>
+            Given a csv files full of synonym and antonym pairs, I used Python to parse the data into a number of tests to be used as practice for CEM style 11+ tests. I then outputted code that could be inserted into a LaTeX document. The book is <a href="https://www.amazon.co.uk/dp/1082205273/ref=sr_1_7?keywords=synonym+and+antonym&qid=1563985888&s=gateway&sr=8-7">Available on Amazon</a>
+            <br>Technologies used: Python, LaTeX
+            <br>
+            <h3><a href="https://github.com/ElliotMoffatt/ShuffledSentences">Shuffled Sentences</a></h3>
+            Successor to NymParser, for the Shuffled sentences part of the cem test.<br>
+
+            This time I actually created classes for tests and questions instead of using arrays of arrays of arrays.<br>
+
+            Also had a fixed seed for the randomness so i could shuffle the same way each time, saving me from having to create an intermediate save file after shuffling.<br>
+
+            The book is also <a href="https://www.amazon.co.uk/Shuffled-Sentences-Practice-Book-Preparation/dp/1089544685/ref=sr_1_1?keywords=shuffled+sentences+practice+book&qid=1565781395&s=gateway&sr=8-1">Available on Amazon</a>
+            <br>Technologies used: Python, LaTeX
+            <br>
+
+            <h3><a href="https://fogbg.org.uk/">Site for my local Burial Ground</a></h3>
+            I created, and provide ongoing support, for the website for the volunteer group restoring our local burial ground
+            <br>Technologies used: Vue.js, html, css, js, bootstrap
+            <br>
+
+            <h3><a href="https://github.com/ElliotMoffatt/11PlusCompanionApp">11+ companion app</a></h3>
+            A small webapp to go alongside the synonyms and antonyms books
+            Playable <a href="https://github.com/ElliotMoffatt/11PlusCompanionApp">here</a> (best used on mobile)
+            <br>Technologies used: Vue.js, html, css, js, bootstrap
+            <br>
+
+        </div>
+        <div class="tab-pane fade" id="nav-for-university" role="tabpanel" aria-labelledby="nav-for-university-tab">
+
+            <h3>Build the game Hex and an AI to play it</h3>
+            In my first year at Durham, my end of year assessment for the Java module was to make the game <a href="https://en.wikipedia.org/wiki/Hex_(board_game)">Hex</a> in Java and build an AI to play against. The AI used a Monte Carlo tree search.<br>
+            Technologies used: Java
+            <br>
+            <h3>Twitter Sentiment Analysis</h3>
+            The assessment for my web programming submodule in second year was to build a website for searching an FAQ, as well as allowing certain users (verified using the University login system) to make changes to the FAQ. Additionally, the website allowed users search a topic, and, using sentiment analysis and the twitter API, display tweets saying positive, negative and neutral things about the topic.<br>
+            Technologies used: HTML, CSS, Javascript, JQuery, Bootstrap, NodeJS, php, json
+            <br>
+            <h3><a href="https://github.com/ElliotMoffatt/VHDLCoursework">VHDL</a></h3>
+            Used Altera Quartus to design, using VHDl, a 32bit Ripple Adder and a 32 bit Carry-Lookahead Adder, Test their respective timings, and discuss the strengths of FPGAs vs ASICs.
+            Technologies used: VHDL
+            <br>
+            <h3>Fake News Detection</h3>
+            The assessment for the Big Data submodule in 3rd year was, given a document containing 6000 articles labeled fake or real news, to build a Neural Network that, after being trained on a training set of the articles, could determine which articles in the test set were fake news and which were real news.<br>
+            Technologies used: Natural Language Processing, Python, Tensorflow, Keras
+            <br>
+            <h3>Optimising Sparse Matrix-Matrix Multiplication</h3>
+            For my GPU, Many-Core, and Cluster Computing submodule, the assignment was to write code that efficiently Multiplys sparse matrices, using performance analysis tools to identify hotspots.
+            <br>Technologies used: C, OpenACC, Intel VTune Amplifier
+            <br>
+            <h3><a href="https://github.com/ElliotMoffatt/NetworksCoursework">Modelling Network Graphs</a></h3>
+            The assignment for the Networks Analysis Submodule was to create models of different graph types, investigate distrubitions such as degree distribution and vertex brilliance, and compare the models to real data sets. I also produced search algorithms that perform efficiently for different types of graph.
+            <br>Technologies used: Python, Matplotlib
+            <br>
+            <h3><a href="https://github.com/ElliotMoffatt/VR-coursework">Determining VR headset Orientation from IMU data</a></h3>
+            The assignment for the Virtual Reality Submodule was, given Accelerometer, Magnetometer and Gyroscope data over a 30 second time period, to deduce the orientation of the Inertial measurement unit, and create 2D graphs to show the orientation over time, as well as an animated 3D plot
+            <br>Technologies used: Python
+            <br>
+            <h3><a href="https://github.com/ElliotMoffatt/BlockchainCoursework">Cryptocurrencies and Blockchain</a></h3>
+            Implemented simple proof-of-work and proof-of-stake mining puzzles in python, and investigated the differences between Bitcoin and a cryptocurrency of my choice (TRON)
+            <br>Technologies used: Python, ECDSA
+            <br>
+            <h2>Masters Project</h2>
+            My 4th year project title is "Dynamic Difficulty Adjustment with Limited Player Data". I have built a <a href="https://github.com/ElliotMoffatt/BulletHell">Bullet hell game</a> and implemented a Dynamic Difficulty System in order to maximise player engagement by preventing the game's difficulty from being too boring or too frustrating. The paper outlines a Framework for implementing such a system in any game.
+            <br>Technologies used: Unity3D, C#
+            <br>
+
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    <br><br><br>
+
+    <!--  HTML CODE GOES HERE -->
+
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            // Disable caching of AJAX responses (not really sure why I need this, but practical instructor advised including it)
+            cache: false,
+        });
 
 //Javascript code goes here
 
 
-</script>
+    </script>
 
 </div>  <!-- end of container div -->
 </body>
